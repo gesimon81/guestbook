@@ -32,7 +32,7 @@ final class ConferenceController extends AbstractController
      
 
     //L'id dans la route va permettre de sélectionner le paramètre Conference
-    #[Route('/conference/{id}', name: 'conference')]
+    #[Route('/conference/{slug}', name: 'conference')]
     //public function show(Request $request, Environment $twig, Conference $conference, CommentRepository $commentRepository): Response
     public function show(Request $request, Conference $conference, CommentRepository $commentRepository): Response
     {
